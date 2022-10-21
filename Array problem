@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+    int N;
+    printf("Enter the number of elements : ");
+    scanf("%d",&N);
+    int arr[N];
+    int i, cost;
+    int j=0;
+    for(i=0;i<N;i++,j++)
+    {
+        printf("Enter the value of index %d = ",j);
+	scanf("%d",&arr[i]);
+    }
+    for(i=0;i<N;i++)
+    {
+       int sum=(i*arr[i]);
+       cost=cost+sum;
+    }
+    printf("Cost of the array = %d\n",cost);
+    printf("ARRAY elements are : \n");
+    for(i=0;i<N;i++)
+    {
+        printf("%d\n",arr[i]);
+    }
+    return 0;
+}
